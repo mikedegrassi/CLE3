@@ -1,0 +1,23 @@
+.top_section {
+
+    /*Hier zorg ik ervoor dat deze section heel
+    het scherm is zodra de site geopend wordt.*/
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("../tools/topfoto(bewerkt).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top_div {
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+/* Elke img in top_div krijgt deze waarde
+In dit geval is het maar een foto*/
+.top_div > img {
+    max-width: 100%;
+    height: 30%;
+}

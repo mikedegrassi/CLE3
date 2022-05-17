@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* zodat de browser rekening houd met mijn opgegeven
+    waardes die ik heb gegeven aan de elementen*/
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+}
+
+section {
+    /* De section bevinden zich over de gehele lengte */
+    max-width: 100%;
+}
+
+.div_h1 {
+    padding-top: 1%;
+
+    text-align: center;
+    color: ghostwhite;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+}
+
+h2,
+h3 {
+    color: ghostwhite;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: medium;
+    text-align: center;
+}

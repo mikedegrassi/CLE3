@@ -1,0 +1,110 @@
+.concept_section{
+    background-color: #160040;
+    width: 100vw;
+    height: 100vh;
+}
+
+#myCanvas{
+    display: block;
+
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    height: 50%;
+
+    background-color: #121212;
+    border: #FF1801 solid 1px;
+}
+
+.gameinfo {
+    /* zorgt ervoor dat de z-index wordt
+    meegenomen in het berekenen van de positie*/
+    position: relative;
+    background: dimgrey;
+
+    padding: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 20%;
+    max-height: 20%;
+    top: 42.5%;
+    z-index: 2;
+
+    text-align: center;
+
+    border: solid 1px #FF1801;
+}
+
+.startbutton{
+    margin-right: auto;
+    margin-left: auto;
+
+    background: #121212;
+    color: rgba(255, 24, 1, .3);
+    padding: 3%;
+
+    border: solid rgba(255, 24, 1, .3);
+    border-radius: 7px;
+}
+
+.startbutton:hover{
+
+    color: rgba(255, 24, 1, .9);
+
+    border: solid rgba(255, 24, 1, .9);
+
+    border-radius: 15px;
+}
+
+.demoh2{
+    margin: auto;
+    text-align: center;
+    color: ghostwhite;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.demop{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.none{
+    display: none;
+}
+
+@media (max-width: 1050px) {
+
+    .div_h1{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 850px){
+
+    .div_h1{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .canvas{
+        width: 80%;
+    }
+
+    .gameinfo{
+        max-width: 70%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .div_h1{
+        font-size: 25px;
+    }
+
+}

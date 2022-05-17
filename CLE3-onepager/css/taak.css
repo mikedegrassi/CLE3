@@ -1,0 +1,150 @@
+.taak_section {
+    background-color: #5C5470;
+}
+
+
+.taak_div {
+
+    /* Hier is display flex nodig zodat de
+    div's gebruik maken van de verticale ruimte*/
+    display: flex;
+
+    background-color: #5C5470;
+
+    max-height: 20%;
+    padding: 3%;
+    /* maakt een gat van 15% van het scherm tussen
+    de div's*/
+    gap: 15%;
+
+}
+
+.taak_div1 {
+    color: #5B84B1FF;
+    background: #E69A8DFF;
+
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 37px 140px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 110px 19px;
+
+    max-width: 20%;
+
+    margin-right: 3%;
+    margin-left: 3%;
+    padding: 3%;
+}
+
+.taak_div1_h2 {
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.taak_div2 {
+    max-width: 40%;
+}
+
+.taak_div2 > img {
+    padding-top: 25%;
+}
+
+.taak_div3 {
+    display: flex;
+
+    /*zet zichzelf en al zijn content in het midden
+    van het scherm*/
+    justify-content: center;
+
+    background-color: #5C5470;
+
+    padding: 2%;
+    gap: 5%;
+}
+
+.taak_div4 {
+    color: #5B84B1FF;
+    background: #E69A8DFF;
+
+    border-top-left-radius: 110px 19px;
+    border-top-right-radius: 110px 19px;
+    border-bottom-left-radius: 37px 140px;
+    border-bottom-right-radius: 37px 140px;
+
+    max-width: 20%;
+    padding: 3%;
+}
+
+.taak_p {
+    font-size: larger;
+    text-align: center;
+}
+
+
+/*media*/
+@media (max-width: 1495px ) {
+
+    .taak_div2 {
+        /* haalt de hele div waar de foto in zit weg*/
+        display: none;
+    }
+
+    .taak_div {
+        gap: 10%;
+    }
+
+    .taak_div3 {
+        gap: 10%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .taak_div {
+
+        /* laat de divs onder elkaar staan*/
+        display: inline;
+
+        justify-content: center;
+
+        background-color: #5C5470;
+
+        max-height: 20%;
+        padding: 3%;
+        gap: 15%;
+    }
+
+    .taak_div1{
+        /* zorgt voor een scrollbare div zodat
+        de pagina niet te lang wordt*/
+        overflow: auto;
+
+        max-height: 30vh;
+        max-width: 50%;
+
+        margin-bottom: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 15px;
+    }
+
+    .taak_div4{
+        overflow: auto;
+
+        max-height: 30vh;
+        max-width: 50%;
+
+
+        margin-bottom: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 15px;
+    }
+
+    .taak_div3 {
+
+        display: inline;
+        justify-content: center;
+
+    }
+
+}
